@@ -1,6 +1,5 @@
-//
-//
-//
+//输入一个数，输出它的立方
+
 #include <stdio.h>
 int main(void)
 {
