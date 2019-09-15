@@ -1,11 +1,17 @@
 # ch.02
 
 1. 如何称呼C程序的基本模块？
+
 函数
+
 2. 什么是语法错误？
+
 违背了如何把语句或者程序放在一起的规则
+
 3. 什么是语义错误？
+
 含义上的错误
+
 4. 修改下面的程序
 ```
 include stdio.h
@@ -16,7 +22,16 @@ s: = 56;
 print (There are s weeks in a year.);
 return 0;
 ```
-
+```c
+#include <stdio.h>
+int main(void)
+{
+    int s;
+    s = 56;
+    printf ("There are %d weeks in a year.");
+    return 0;
+}
+```
 5. 假设下面的每一个例子都是某个完整程序的一部分，它们每个将输出什么结果？
 ```c
 printf ("Baa Baa Black Sheep");
