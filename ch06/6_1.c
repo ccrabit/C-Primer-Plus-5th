@@ -4,6 +4,14 @@
 #include <math.h>
 int main(void)
 {
-
+    char words[26];
+    int i = 0;
+    
+    for(i = 0 ; i < 26 ; i++)
+    {
+        words[i] = 'a' + i;
+        printf ("%c",words[i]);
+    }
+    printf ("\n");
     return 0;
 }
