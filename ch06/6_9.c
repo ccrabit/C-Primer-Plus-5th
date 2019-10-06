@@ -5,10 +5,23 @@
 #include <stdio.h>
 int main(void)
 {
-    printf ("Enter lower and upper integer limits:\n");
+    int low,up;
+    long long sum;
 
-    printf ("The sum of the squares from %d to %d is %d\n");
-
+    printf ("Enter lower integer limits:\n");
+    scanf ("%d",&low);
+    printf ("Enter upper integer limits:\n");
+    scanf ("%d",&up);
+    while (low<up)
+    {
+        for (sum = 0;low<=up;low++)
+            sum += low * low;
+        printf ("The sum of the squares from %d to %d is %lld\n",low,up,sum);
+        printf ("Enter lower integer limits again:\n");
+        scanf ("%d",&low);
+        printf ("Enter upper integer limits again:\n");
+        scanf ("%d",&up);
+    }
     printf ("Done.\n");
 
     return 0;
